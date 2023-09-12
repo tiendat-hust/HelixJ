@@ -9,6 +9,6 @@ public class Rotate : MonoBehaviour
     {
         float x = Input.GetAxis("Mouse X");
 
-        transform.GetChild(0).transform.RotateAround(transform.position, new Vector3(0, 1, 0) * Time.deltaTime* x*-1, angle);
+        transform.GetChild(0).transform.RotateAround(transform.position, new Vector3(0, 1, 0) * Time.deltaTime* x , angle);
     }
 }

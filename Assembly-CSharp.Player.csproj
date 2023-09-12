@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\ResetGame.cs" />
     <Compile Include="Assets\Scripts\Destroy.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
   </ItemGroup>

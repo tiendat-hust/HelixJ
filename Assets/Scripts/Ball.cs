@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 public class Ball : MonoBehaviour
@@ -23,7 +22,6 @@ public class Ball : MonoBehaviour
     {
         add_force = true;
         highscore_txt.text = "HighScore: " + PlayerPrefs.GetInt("highscore");
-
 
     }
 
@@ -48,7 +46,7 @@ public class Ball : MonoBehaviour
         else if (col.gameObject.tag == "gameover")
         {
             GameOverMenu.SetActive(true);
-
+            Time.timeScale = 0f;
         }
     }
 
@@ -82,8 +80,5 @@ public class Ball : MonoBehaviour
             Camera.main.transform.position = pos;
         }
     }
-    public void ResetTheGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    
 }
